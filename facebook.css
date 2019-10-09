@@ -1,0 +1,35 @@
+body{
+	margin:0;
+	background-color: #e5e8f2;
+	cursor: url('curs.ani');
+}
+
+header
+{	display: flex;
+	flex-direction: row;
+	background-color: #3c5a98;
+	align-items: flex-end;
+	height:70px;
+}
+
+#title-head{
+	color: white;
+	font-family: 'PT Serif', serif;
+	margin: 0;
+	margin-left: 3%;
+	font-size: 35px;
+	}
+
+main{
+	display: flex;
+}
+
+#img-left{
+	width: 40%;
+}
+article{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width:40%;
+}
