@@ -1,7 +1,7 @@
 body{
 	margin:0;
 	background-color: #e5e8f2;
-	cursor: url('curs.ani');
+	font-family: 'PT Serif', serif;
 }
 
 header
@@ -9,7 +9,7 @@ header
 	flex-direction: row;
 	background-color: #3c5a98;
 	align-items: flex-end;
-	height:70px;
+	height: 50px;
 }
 
 #title-head{
@@ -22,6 +22,8 @@ header
 
 main{
 	display: flex;
+	margin: auto;
+	justify-content: space-around;
 }
 
 #img-left{
@@ -32,4 +34,41 @@ article{
 	flex-direction: column;
 	align-items: center;
 	width:40%;
+	border-radius: 30px;
+	margin: 10px;
+	background-color: white;
+	box-shadow: 3px 3px 3px black;
+}
+p{width:400px;}
+div{
+	display: flex;
+	flex-direction: row;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+#lien{
+	font-size: 20px;
+	font-family: 'PT Serif', serif;
+	color: #3c5a98;
+}
+section{
+	display: flex;
+	justify-content: space-between;
+	width: 60%;
+}
+#img-right{
+	width: 30%;
+}
+.logo{
+	width: 100px;
+	text-align: center;
+}
+.img-tel{
+	width: 100px;
+}
+footer{
+	text-align: center;
+	font-family: 'PT Serif', serif;
+	color: #3c5a98;
 }
