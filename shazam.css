@@ -1,6 +1,7 @@
 body{
 	background-color:#01b2ff;
 	margin: 0;
+	font-family: 'Big Shoulders Display', cursive;
 }
 main{
 	display: flex;
@@ -9,8 +10,11 @@ main{
 }
 h1{
 	color: white;
+	text-transform: uppercase;
 }
-header{background-color: white;}
+header{
+	background-color: white;
+}
 #head-log{
 	width: 150px;
 	margin: 1%;
@@ -20,12 +24,11 @@ header{background-color: white;}
 	text-align: center;
 }
 section{
-	margin-top: 2%;
+	margin-top: 4%;
 	display: flex;
 	flex-direction: row;
 	width: 100%;
 	justify-content: space-around;
-
 }
 article{
 	width:250px ;
@@ -36,13 +39,14 @@ article{
 	align-items: center;
 	border-radius: 20px;
 	box-shadow: 4px 4px 5px black;
-
 }
 h2{
-	text-decoration: underline;
+	text-decoration: underline overline #01b2ff ;
+	text-align: center;
 }
 p{
 	margin-inline:10%;
+	font-size: 126%;
 }
 a{text-align: center;}
 div{
@@ -51,14 +55,34 @@ div{
 	justify-content: space-around;
 	height:100%;
 }
+@keyframes zoom {
+  0% { transform: scale(1); }
+  10% { transform: scale(1.1); } 
+  100% { transform: scale(1.2); }
+}
 .res-img{
 	width: 40%;
 }
+
+a:hover .res-img{
+	animation: zoom 0.5s;
+ 	animation-iteration-count: 1;
+ 	transform: scale(1.2);
+}
+
 .tel-img{
 	width: 50%;
 }
+a:hover .tel-img{
+	animation: zoom 0.5s;
+ 	animation-iteration-count: 1;
+ 	transform: scale(1.2);
+}
 footer{
+	height: 3%;
 	margin-top: 2%;
 	text-align: center;
 	background-color: white;
+	height: 40px;
+	font-size: larger;
 }

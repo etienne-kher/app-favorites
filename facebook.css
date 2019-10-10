@@ -4,8 +4,8 @@ body{
 	font-family: 'PT Serif', serif;
 }
 
-header
-{	display: flex;
+header{	
+	display: flex;
 	flex-direction: row;
 	background-color: #3c5a98;
 	align-items: flex-end;
@@ -18,7 +18,7 @@ header
 	margin: 0;
 	margin-left: 3%;
 	font-size: 35px;
-	}
+}
 
 main{
 	display: flex;
@@ -39,7 +39,9 @@ article{
 	background-color: white;
 	box-shadow: 3px 3px 3px black;
 }
-p{width:400px;}
+p{
+	width:400px;
+}
 div{
 	display: flex;
 	flex-direction: row;
@@ -57,8 +59,26 @@ section{
 	justify-content: space-between;
 	width: 60%;
 }
+
 #img-right{
 	width: 30%;
+}
+@keyframes tourne {
+  0% { transform: translate(0px, 0px) rotate(0deg); }
+  10% { transform: translate(0px, 0px) rotate(36deg); }
+  20% { transform: translate(0px, 0px) rotate(72deg); }
+  30% { transform: translate(0px, 0px) rotate(108deg); }
+  40% { transform: translate(0px, 0px) rotate(144deg); }
+  50% { transform: translate(0px, 0px) rotate(180deg); }
+  60% { transform: translate(0px, 0px) rotate(216deg); }
+  70% { transform: translate(0px, 0px) rotate(252deg); }
+  80% { transform: translate(0px, 0px) rotate(288deg); }
+  90% { transform: translate(0px, 0px) rotate(324deg); }
+  100% { transform: translate(0px, 0px) rotate(360deg); }
+}
+div:hover #img-right{
+	animation: tourne 0.8s;
+ 	animation-iteration-count: 1;		
 }
 .logo{
 	width: 100px;
@@ -66,6 +86,23 @@ section{
 }
 .img-tel{
 	width: 100px;
+}
+@keyframes saut {
+  0% { transform: translate(0px, 0px) ; }
+  10% { transform: translate(0px, -1px) ; }
+  20% { transform: translate(0px, -3px) ; }
+  30% { transform: translate(0px, -5PX) ; }
+  40% { transform: translate(0px, -6px) ; }
+  50% { transform: translate(0px, -7px); }
+  60% { transform: translate(0px, -5px); }
+  70% { transform: translate(0px, -3px) ;}
+  80% { transform: translate(0px, -2px) ; }
+  90% { transform: translate(0px, 1Px) ; }
+  100% { transform: translate(0px, 0px) ; }
+}
+.img-tel:hover{
+	animation: saut 0.5s;
+  	animation-iteration-count: infinite;
 }
 footer{
 	text-align: center;
